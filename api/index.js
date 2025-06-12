@@ -29,7 +29,7 @@ const db = admin.firestore();
 export default async function handler(req, res) {
   // --- Part 1: Handle Facebook's Verification Request ---
   if (req.method === "GET") {
-    const VERIFY_TOKEN = "YOUR_SECRET_VERIFY_TOKEN"; // Must match what you put in Facebook's dashboard
+    const VERIFY_TOKEN = "munna12345"; // Must match what you put in Facebook's dashboard
     const mode = req.query["hub.mode"];
     const token = req.query["hub.verify_token"];
     const challenge = req.query["hub.challenge"];
